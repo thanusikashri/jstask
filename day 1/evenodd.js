@@ -15,7 +15,7 @@ if (b%2==0){
 
 //Step 4: Day Info
 let day = 2;
-switch(day) {
+switch(true) {
     case (day >= 1 && day <=5 ):
         console.log("It's a weekday.");
         break
