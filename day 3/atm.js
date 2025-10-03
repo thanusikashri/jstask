@@ -9,12 +9,12 @@ function ATMsimulator(){
             let choice = prompt("Enter your choice:\n1 : Withdraw\n2 : Deposit\n3 : Check Balance");
             switch(choice) {
                 case "1":
-                    let amt1 = prompt("Enter the amount:");
+                    let amt1 = prompt("Enter the amount to Withdraw:");
                     let amount1 = Number(amt1);
                     alert("Withdraw successful! New balance: " + (balance-amount1));
                     break;
                 case "2":
-                    let amt2 = prompt("Enter the amount:");
+                    let amt2 = prompt("Enter the amount to Deposit:");
                     let amount2 = Number(amt2);
                     alert("Deposit successful! New balance: " + (balance+amount2));
                     break;
