@@ -24,9 +24,8 @@ let student = {};
         let currentYear = new Date().getFullYear();
         let age = currentYear - student.birthYear;
         student.age = age;
-
-        let eligibility = age >= 18 ? "Eligible! " : "Not Eligible!";
-        document.getElementById("ageOutput").innerText ="Age: " + age + " years";
+        if (age>=18){
+        document.getElementById("ageOutput").innerText ="Age: " + age + " years" + "\n" + "Eligible!";}
       } catch (err) {
         document.getElementById("ageOutput").innerText =  err;
       }
