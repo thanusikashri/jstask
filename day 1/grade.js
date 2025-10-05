@@ -8,7 +8,7 @@ let a = Number(mark);
 
 //Step 3: Assign grades using switch
 let grade;
-switch(1){
+switch(true){
     case (a >= 90 && a <= 100):
         grade = "A";
         break
