@@ -65,7 +65,7 @@ function onlineFood(){
                         total = 0;
                 }
 
-                let prepare = new Promise((resolve) => {
+                let prepare = new Promise((resolve, reject) => {
                     alert("Your order is being prepared...");
                     setTimeout(() => {
                         if (total>0){
@@ -73,7 +73,7 @@ function onlineFood(){
                         } else {
                             reject("Error!");
                         }
-                    }, 2000);
+                    }, 1500);
                 });
 
                 prepare.then((message) => {
