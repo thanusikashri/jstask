@@ -4,12 +4,16 @@ function votingChecker() {
 
   while (again) {
     let name = prompt("Enter your name:");
-    let age = prompt("Enter your age:");
+    let a = prompt("Enter your age:");
 
-    if (age >= 18) {
-      alert("Hello " + name + " you are eligible to vote!");
+    let age = Number(a);
+
+    if (age >= 18 && age<100) {
+      alert("Hello! " + name + " you are eligible to vote!");
+    } else if (age<18 && age>=5) {
+      alert("Sorry! " + name + " you are not eligible to vote.")
     } else {
-      alert("Sorry " + name + " you are not eligible to vote.")
+      alert("Invalid Age!");
     }
 
     again = confirm("Do you want to check again?");

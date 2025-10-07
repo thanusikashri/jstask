@@ -18,10 +18,9 @@
     }
 
     li {
-        justify-content: center;
         text-align: center;
         font-size: 22px;
-        margin-bottom: 12px;
+        margin-bottom: 15px;
         list-style-type: none;
         background-color: rgba(0, 0, 0, 0.2);
         padding: 5px;
@@ -69,12 +68,15 @@
         </datalist>
         
         <input type="datetime-local" id="taskDate">
+
         <h3 style="font-size: 23px; margin-bottom: 5px;">Priority:</h3>
+
         <select id="priority">
             <option value="Low">Low</option>
             <option value="Medium" selected>Medium</option>
             <option value="High">High</option>
         </select><br><br>
+        
         <button onclick="addTask()" style="background-color: rgb(73, 192, 192);">Add Event</button>
     </div></center>
 
